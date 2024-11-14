@@ -36,7 +36,7 @@ export default async function Page({params}: {
                 <a href={overviewData.OfficialSite}
                    className="font-semibold text-md btn btn-secondary btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                     <Image
-                        src="/globe.svg"
+                        src="./globe.svg"
                         alt="Website"
                         className="h-4 w-4 opacity-70"
                         width={16}

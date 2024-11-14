@@ -34,7 +34,7 @@ export default function Home() {
                                 placeholder="Search..."
                                 className="grow"/>
                             <Image
-                                src="/search.svg"
+                                src="./search.svg"
                                 alt="Search"
                                 className="h-4 w-4 opacity-70"
                                 width={16}
