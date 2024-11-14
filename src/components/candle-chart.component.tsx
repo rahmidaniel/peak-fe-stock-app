@@ -82,7 +82,7 @@ export function CandleChart({data, baseWidth = 800, baseHeight = 300}: {
     }, [data, chartRef]);
 
     return (
-        // @ts-ignore
+        // @ts-expect-error ref has a valid type here
         <div className="flex-1 bg-base-200 rounded-md shadow-md p-4 mx-auto" ref={chartRef}>
             {!data && (<p className="text-center text-lg text-neutral-content">Time series data not available:(</p>)}
         </div>
