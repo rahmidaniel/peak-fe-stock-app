@@ -10,7 +10,7 @@ export default function Home() {
     const [searchInput, setSearchInput] = useState<string>('');
     const [results, setResults] = useState<SearchResult[]>();
 
-    async function handleSearch(event: any) {
+    async function handleSearch(event) {
         const keyword = event.target.value?.trim();
         setSearchInput(keyword);
         setResults(keyword ? await apiService.getSearchResults(keyword) : undefined);
