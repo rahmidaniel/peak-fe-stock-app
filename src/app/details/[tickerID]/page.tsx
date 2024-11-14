@@ -1,4 +1,4 @@
-import {apiService} from "../../../api/api-service";
+import {apiService} from "../../../../api/api-service";
 import Image from "next/image";
 import {FinancialMetrics} from "@/components/financial-metrics.component";
 import {IndustryStats} from "@/components/industry-stats.component";
