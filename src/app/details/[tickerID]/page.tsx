@@ -7,7 +7,7 @@ import {ChartStats} from "@/components/chart-stats.component";
 import {OverviewData} from "@/interfaces/overview-data.interface";
 
 export async function generateStaticParams() {
-    return ({tickerID: ''});
+    return ([{tickerID: ''}]);
 }
 
 export default async function Page({params}: {
