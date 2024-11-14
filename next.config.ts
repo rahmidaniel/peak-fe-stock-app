@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    output: undefined,
-    basePath: '/peak-fe-stock-app',
+    output: 'export',
 };
 
 export default nextConfig;

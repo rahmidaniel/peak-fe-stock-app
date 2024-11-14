@@ -6,10 +6,13 @@ import {CandleChart} from "@/components/candle-chart.component";
 import {ChartStats} from "@/components/chart-stats.component";
 import {OverviewData} from "@/interfaces/overview-data.interface";
 
+export async function generateStaticParams() {
+    return ([{tickerID: '42'}]);
+}
+
 export default async function Page({params}: {
     params: Promise<{ symbol: string }>
 }) {
-    console.log("current symbol", (await params).symbol);
 
     const symbol = (await params).symbol;
     const overviewData: OverviewData = await apiService.getOverview(symbol);
