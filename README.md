@@ -1,3 +1,5 @@
+Deployed: https://rahmidaniel.github.io/peak-fe-stock-app/
+
 # Stock Search App
 
 ## Objective
