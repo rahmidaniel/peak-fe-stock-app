@@ -14,7 +14,7 @@ export function CandleChart({data, baseWidth = 800, baseHeight = 300}: {
     const margin = {top: 20, right: 30, bottom: 30, left: 50};
     const width = baseWidth - margin.left - margin.right;
     const height = baseHeight - margin.top - margin.bottom;
-    const createChart = (chartRef: MutableRefObject<HTMLDivElement>) => {
+    const createChart = (chartRef: MutableRefObject<string>) => {
         const svg = d3.select(chartRef.current)
             .html("")
             .append('svg')
